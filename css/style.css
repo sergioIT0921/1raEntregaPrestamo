@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px solid yellow;
+}
+body{
+    font-family: 'Arial';
+}
+.contenedor{
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsla(25, 75%, 47%, 0.342);
+    text-align: center;
+    /* display: flex;
+        flex-direction: column;
+        justify-content: space-between; */
+}
+.container-90{
+    margin: 0 auto;
+    width: 90%;
+        max-width: 1200px;
+    height: 100%;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        
+}
+
+header{
+   background-image: url(img/Personal.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   height: 75vh;
+   
+}
+    .titulo{
+        text-align: center;
+        color: rgba(0, 0, 255, 0.479);
+        font-size: 40px;
+        padding: 50px;
+        letter-spacing: 5px;
+        word-spacing: 10px;
+    }
+main{
+    height: 23vh;
+        max-height: 1000px;
+    
+       
+}
+    main .container-90{
+        
+        display: grid;
+            place-content: center;
+            gap: 2vh;
+            
+        
+    }
+    .subtitulo{
+        text-align: center;
+        color: rgba(0, 0, 255, 0.479);
+    }
+    .boton{
+        background-color: coral;
+        width: 200px;                
+        text-align: center;
+        margin: auto;
+        padding:10px;
+        border-radius: 20px;
+    }
+    .boton:hover{
+        background-color: rgb(224, 138, 106);
+    }
+    .boton a {
+        text-decoration: none;
+        
+    }
+    .boton-item{
+        color: beige;
+        font-size: 20px;
+    }
+footer{
+    height: 2vh;
+    color:white;
+    background-color: rgba(0,0,0,.2);
+    letter-spacing: 5px;
+    font-size: 10px;
+}
+/* Pantalla LAPTOP 15 pulgadas */
+    @media (max-height:800px) {
+        header{
+            height: 100vh;
+        }
+        main{
+            height: 95vh;
+        }
+        footer{
+            height: 5vh;
+        }
+    }
+/* Pantalla Monitor 24 Pulgadas */
+    @media screen and (max-height:1100px) {
+        header{
+            height: 100vh;
+        }
+        main{
+            height: 95vh;
+        }
+        footer{
+            height: 5vh;
+        }
+    }
